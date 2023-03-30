@@ -147,6 +147,7 @@ color: #404bbf;
 /* text add styles */
 .main-text {
   line-height: 1.5;
+
 }
 
 .text-color {
@@ -188,6 +189,16 @@ color: #404bbf;
   width: calc((100% - 72px) / 4);
 }
 
+.icon-studio {
+  display: block;
+  width: 60px;
+  height: 64px;
+  background-color: rgba(244, 244, 253, 1);
+  padding: 24px 102px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+}
+
 .doing-list {
   display: flex;
     gap: 24px;
@@ -221,6 +232,23 @@ img {
     border-radius: 0px 0px 4px 4px;
 }
 
+
+.icon-team-list {
+  display: flex;
+  margin-top: 8px;
+  gap: 24px;
+  justify-content: center;
+}
+
+.icon-team {
+  display: block;
+      width: 16px;
+      height: 16px;
+      padding: 12px;
+      background-color: var(--button-text-color);
+      border-radius: 50%;
+}
+
 .portfolio-list-wrap {
   padding: 32px 0 32px 16px;
   background: #FFFFFF;
@@ -243,7 +271,10 @@ img {
 
 .portfolio-item {
   width: calc((100% - 48px) / 3);
+}
 
+.portfolio-item:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 /* .text-align {
@@ -263,6 +294,10 @@ img {
   padding-top: 188px;
   padding-bottom: 188px;
   background-color: var(--head-color);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-people-office.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1440рх;
 }
 
 .section {
@@ -331,6 +366,8 @@ padding: 12px 24px;
 .list-button:focus {
 color: var(--hero-header-color);
 background-color: var(--active-button-bg);
+border: none;
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* portfolio-buttons */
