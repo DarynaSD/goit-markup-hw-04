@@ -263,14 +263,19 @@ color: #404bbf;
   width: calc((100% - 72px) / 4);
 }
 
-.icon-studio {
-  display: block;
-  width: 60px;
-  height: 64px;
+.studio-icon-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 112px;
   background-color: rgba(244, 244, 253, 1);
-  padding: 24px 102px;
-  margin-bottom: 8px;
   border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.icon-studio {
+  /* display: block;  */
 }
 
 .doing-list {
@@ -322,6 +327,8 @@ img {
 
 .team-icon-link {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
     height: 100%;
     background-color: var(--button-text-color);
@@ -335,10 +342,7 @@ img {
 }
 
 .team-icon-svg {
-display: block;
-  width: 16px;
-  height: 16px;
-  padding: 12px;
+/* display: block; */
   fill: currentColor;
 }
 
@@ -347,28 +351,32 @@ display: block;
 /* customers icons */
 .customers-list {
 display: flex;
-  margin-top: 72px;
   justify-content: center;
   gap: 24px;
 }
 
 .customers-item {
+  width: calc(100% - 120px / 6);
+}
+
+.customers-link {
   display: flex;
-  justify-content: center;
-  align-items: center;
-width: calc(100% / 6 - 24px);
-height: 88px;
-border: 1px solid var(--subtle-text);
-border-radius: 4px;
-color: var(--subtle-text);
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    height: 88px;
+    border: 1px solid var(--subtle-text);
+    border-radius: 4px;
+    color: var(--subtle-text);
 }
 
 .customers-svg {
   fill: currentColor;
 }
 
-.customers-item:hover,
-.customers-item:focus {
+.customers-link:hover,
+.customers-link:focus {
   border: 1px solid var(--active-button-bg);
   color: var(--active-button-bg);
 }
@@ -404,7 +412,11 @@ color: var(--subtle-text);
   width: calc((100% - 48px) / 3);
 }
 
-.portfolio-item:hover {
+.portfolio-link {
+  display: block;
+}
+
+.portfolio-link:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
@@ -430,7 +442,10 @@ color: var(--subtle-text);
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-people-office.png);
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 1440рх;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  background-position: center;
 }
 
 .section {
@@ -500,7 +515,7 @@ padding: 12px 24px;
 .list-button:focus {
 color: var(--hero-header-color);
 background-color: var(--active-button-bg);
-border: none;
+border: 1px solid var(--active-button-bg);
 box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
